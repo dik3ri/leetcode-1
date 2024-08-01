@@ -1,1 +1,17 @@
 https://leetcode.com/problems/power-of-two/?envType=daily-question&envId=2024-07-17
+
+
+public class Solution {
+    public bool IsPowerOfTwo(int n) {
+        while(n>0){
+            if(n==1){
+                return true;
+            } else if(n%2==0){
+                n = n/2;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
+}
